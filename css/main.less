@@ -1,0 +1,184 @@
+/**
+ Main CSS for Portfolio Project
+    This CSS is generated from Less code.
+    I'm not providing Less source in Codepen due to Asset issue. Refer to my Github for actual sourcecode.
+ */
+
+/** Extra LESS Styles **/
+@import "tool";
+@import "palette";
+
+/** Global **/
+@default-font: "Microsoft YaHei UI";
+
+body{
+  margin: 0;
+  font-family: @default-font, "微软雅黑";
+}
+
+/** Topbar **/
+@padding-LR: 1.5em;
+
+.topbar
+{
+  position: relative;
+//  height: 3em;
+
+  padding: 1em @padding-LR 1em @padding-LR;
+
+  div{
+    display: inline;
+  }
+
+  margin: 0;
+  background-color: @darkPrimaryColor;
+
+}
+
+.logo-text
+{
+  font-size: 1.8em;
+  margin-right: 0.8em;
+  letter-spacing: 0.25em;
+
+  color: @textPrimaryColor;
+}
+
+.logo-subtext
+{
+  font-size: 1em;
+
+  color: mintcream;
+}
+
+.view-git
+{
+  .right;
+
+  a {
+    color: @textPrimaryColor2;
+  }
+}
+
+.git-icon
+{
+  width: 32px;
+  height: 32px;
+
+  margin-right: 0.5em;
+
+  background-image: url(@github-logo);
+}
+
+
+/** Central Banner **/
+.central-banner
+{
+  background-color: @primaryColor;
+  height: 25em;
+
+  div{
+    text-align: center;
+  }
+}
+
+.central-title
+{
+  font-size: 2.125em;
+
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
+  letter-spacing: 0.2em;
+
+  color: @textPrimaryColor;
+}
+
+.central-content
+{
+  font-size: 1.125em;
+  padding-bottom: 0.5em;
+
+  color: @textPrimaryColor;
+}
+
+
+
+/** Footer **/
+footer
+{
+  // Basic footer layout
+  bottom: 0;
+
+  width: 100%;
+  background-color: black;
+}
+
+.footer-content
+{
+  font-size: 0.8em;
+  color: white;
+
+  padding: 1em 2.5em 1em 2.5em;
+}
+
+
+/** Instruction Contents **/
+.instruction-container
+{
+  position: relative;
+
+  // 水平居中
+  .horizontal-center;
+
+
+  padding: 2em 13%;
+
+}
+
+.instruction-title
+{
+  text-align: center;
+
+//  padding-top: 1.5em;
+//  padding-bottom: 1em;
+
+  letter-spacing: 0.2em;
+}
+
+.instruction-section
+{
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  padding: 1em 3em;
+  margin: 2.5em 0;
+
+  background-color: @instructionSectionColor;
+}
+
+#instruction-of-advantages
+{
+  background-color: #80CBC4;
+}
+
+#informs-of-advantages
+{
+  background-color: #C5E1A5;
+}
+
+#sth-about-my-current-advantage
+{
+  padding: 2em 15%;
+  line-height: 1.5em;
+  letter-spacing: 0.15em;
+}
+
+#emphasize-for-my-slogan
+{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.125em;
+  letter-spacing: 0.125em;
+}

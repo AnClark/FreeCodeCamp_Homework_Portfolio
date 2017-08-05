@@ -1,0 +1,53 @@
+/** Tool classes **/
+.right {
+  float: right;
+}
+.horizontal-center {
+  margin: 0 auto;
+}
+/**
+  CodePen - Absolute Centering
+  https://codepen.io/shshaw/full/gEiDt/
+ */
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.center-container {
+  position: relative;
+}
+.absolute-center {
+  width: 60%;
+  height: 60%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.element-absolute-center {
+  width: 60%;
+  height: 60%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+}
+/** Hide all underlines of hyperlink **/
+a {
+  text-decoration: none;
+}
+a img {
+  border-style: none;
+}
+a:hover {
+  text-decoration: underline;
+}
